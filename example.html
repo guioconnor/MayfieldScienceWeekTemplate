@@ -25,67 +25,80 @@
 
       .example {
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/width */
-        /* width: 100px; */
+        width: 400px;
 
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/height */
-        /* height: 100px; */
+        height: 400px;
 
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/font-size */
-        /* font-size: 12px; */
+        font-size: 35px;
 
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
-        /* border-radius: 5px; */
+        border-radius: 15px;
 
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-color */
-        /* background-color: tomato; */
+        background-color: tomato;
 
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-style */
-        /* border-style: solid; */
+        border-style: dotted;
 
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-width */
-        /* border-width: 2px; */
+        border-width: 10px;
 
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-color */
-        /* border-color: brown; */
+        border-color: brown;
 
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
-        /* transform: rotate(0deg); */
+        transform: rotate(0deg);
 
         /* https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
-        /* transition: transform 1s; */
+         transition: transform 1s; 
       }
 
-      /* .example:hover {
+     .example:hover {
         transform: rotate(45deg);
-      } */
+      }
+
+      .inside {
+        transform: rotate(0deg);
+        transition: transform .5s; 
+      }
+
+      .example:hover .inside {
+        transform: rotate(-45deg);
+      }
 
     </style>
     <title>Science Week — Mayfield</title>
   </head>
   <body>
-    <!-- <h1>Top Header</h1>
-    <h2>Second Header</h2> -->
+    <h1>Top Header</h1>
+    <h2>Second Header</h2>
 
-    <!-- <p>This is a paragraph, you can write text here.</p> -->
+    <p>This is a paragraph, you can write text here.</p>
 
-    <!-- <ol>
+    <ol>
         <li>This first</li>
         <li>Then this</li>
         <li>And finally this</li>
-    </ol> -->
+    </ol>
 
-    <!-- <ul>
+    <ul>
       <li>This first</li>
       <li>Then this</li>
       <li>And finally this</li>
-    </ul> -->
+    </ul>
 
 
-    <!-- <p class="warning">Don't feed the T-Rex</p> -->
+    <p class="warning">Don't feed the T-Rex</p>
 
-    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Dinosaur_Adventure.jpg" width="266" height="400"/> -->
-    <!-- <p>Image used under a Creative Commons license. See more details in <a href="https://commons.wikimedia.org/wiki/File:Dinosaur_Adventure.jpg">this page</a></p> -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Dinosaur_Adventure.jpg" width="266" height="400"/>
+    <p>Image used under a Creative Commons license. See more details in <a href="https://commons.wikimedia.org/wiki/File:Dinosaur_Adventure.jpg">this page</a></p>
 
-    <div class="example">I'm an example</div>
+    <!-- <div class="example">
+      <div class="inside">I'm an very exciting example</div>
+    </div>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Tokyo_kushu_1945-4.jpg" alt="A picture of a stret with poeple"> -->
   </body>
 </html>
